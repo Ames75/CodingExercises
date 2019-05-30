@@ -1,3 +1,6 @@
 #include <vector>
 #include <stdlib.h>
-int hgj_random(std::vector<int>& array, size_t size);
+#include <random>
+/// expect caller to initialize array with right size
+/// this function only populates it
+int hgj_random(std::vector<int>& array,int range_start, int range_end);
